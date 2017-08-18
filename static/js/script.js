@@ -12,7 +12,7 @@ $(document).ready(function(){
   $('#othersHead').hover(function(){
     $('#othersDiv').toggle("slow");
   });
-  // 
+  //
   // $('#profilePic').click(function(){
   //   var quotes = ["All we have to decide is what to do with the time that is given to us.", "Some people can’t believe in themselves until someone else believes in them first.", "Just keep swimming. Just keep swimming. Just keep swimming, swimming, swimming. What do we do? We swim, swim.", "Someone I once knew wrote that we walk away from our dreams afraid that we may fail or worse yet, afraid we may succeed.", "The flower that blooms in adversity is the most rare and beautiful of all.", "Oh yes, the past can hurt. But you can either run from it, or learn from it."]
   //   var randQuote = Math.floor((Math.random() * 6));
@@ -23,5 +23,19 @@ $(document).ready(function(){
   $('.projectsDiv').hover(function(){
     $('#userDashInfo').toggle("slow");
   });
+
+  var marquee = $('div.marquee');
+  marquee.each(function() {
+      var mar = $(this),indent = mar.width();
+      mar.marquee = function() {
+          indent--;
+          mar.css('text-indent',indent);
+          if (indent < -1 * mar.children('div.marquee-text').width()) {
+              indent = mar.width();
+          }
+      };
+      mar.data('interval',setInterval(mar.marquee,1000/150));
+  });
+
 
 });
