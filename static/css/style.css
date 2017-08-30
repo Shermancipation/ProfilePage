@@ -22,10 +22,108 @@ a:hover {
     color: #0066ff;
 }
 
+/* Small sized screens */
+@media only screen and (max-width: 480px) {
+  #leftSideBar {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  #rightSide {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  #wrapper {
+    background-image: url("../images/futuristic8.jpg");
+    font-size: .5em;
+  }
+
+  #profilePic {
+    margin: 0 auto;
+  }
+
+  #nameInfo {
+    display: inline-block;
+    margin: 15px 0px 0px 20px;
+    width: 75%;
+    font-size: 1.25em;
+    text-align: center;
+  }
+
+  .topHeader {
+    margin-left: 45px;
+  }
+
+  .statHeader {
+    font-size: 1.1em;
+    margin-left: 45px;
+    color: #0066ff;
+  }
+
+}
+/* Medium sized screens */
+@media only screen and (min-width: 481px) {
+  #leftSideBar {
+    display: inline-block;
+    width: 30%;}
+
+  #rightSide {
+    display: inline-block;
+    width: 60%;}
+
+  #wrapper {
+    background-image: url("../images/futuristic7.jpg");
+    font-size: .75em;
+  }
+
+  #profilePic {
+    margin: 0 auto;
+  }
+
+  #nameInfo {
+    display: inline-block;
+    margin: 15px 0px 0px 20px;
+    width: 75%;
+    font-size: 1.25em;
+  }
+
+  .statHeader {
+    font-size: 1.1em;
+    margin-left: 20px;
+    color: #0066ff;
+  }
+
+}
+/* Large sized screens */
+@media only screen and (min-width: 1024px) {
+  #leftSideBar {
+    display: inline-block;
+    width: 30%;}
+
+  #rightSide {
+    display: inline-block;
+    width: 60%;
+  }
+
+  #wrapper {
+    background-image: url("../images/futuristic7.jpg");
+    font-size: 1em;
+  }
+
+  #nameInfo {
+    display: inline-block;
+    margin: 15px 0px 0px 20px;
+    width: 75%;
+    font-size: 1.25em;
+  }
+}
+
 #wrapper {
   display: block;
-  background-image: url("../images/futuristic7.jpg");
-  font-size: 16px;
+  /*font-size: 16px;*/
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -44,15 +142,14 @@ a:hover {
 #leftSideBar {
   display: inline-block;
   margin-left: 25px;
-  width: 30%;
   vertical-align: top;
 }
 
-.statHeader {
+/*.statHeader {
   font-size: 1.1em;
-  margin-left: 25px;
+  margin-left: 45px;
   color: #0066ff;
-}
+}*/
 
 .statSub {
   font-size: 1.1em;
@@ -62,9 +159,6 @@ a:hover {
 #profilePic{
   display: block;
   width: 80%;
-  /*border-top: 5px solid white;
-  border-radius: 50px;*/
-  margin: 40px;
   opacity: .75;
 }
 
@@ -81,12 +175,12 @@ div.marquee > div.marquee-text {
   font-size: 1.5em;
 }
 
-#nameInfo {
+/*#nameInfo {
   display: inline-block;
   margin: 15px 0px 0px 20px;
   width: 75%;
   font-size: 1.25em;
-}
+}*/
 
 #quotesDiv {
   display: inline-block;
@@ -103,7 +197,6 @@ div.marquee > div.marquee-text {
   padding-left: 10px;
   margin: 20px 0px 0px 20px;
   /*border: 1px solid white;*/
-  width: 60%;
 }
 
 #levelBar {
