@@ -110,6 +110,7 @@ a:hover {
 
   #wrapper {
     background-image: url("../images/futuristic7.jpg");
+    background-size: cover;
     font-size: 1em;
   }
 
@@ -124,7 +125,7 @@ a:hover {
 #wrapper {
   display: block;
   /*font-size: 16px;*/
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
